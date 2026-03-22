@@ -1,0 +1,15 @@
+---
+- name: Monitor passwd file
+  lineinfile:
+    path: /etc/audit/rules.d/audit.rules
+    line: "-w /etc/passwd -p wa -k passwd_changes"
+
+- name: Monitor shadow file
+  lineinfile:
+    path: /etc/audit/rules.d/audit.rules
+    line: "-w /etc/shadow -p wa -k shadow_changes"
+
+- name: Monitor sudo usage
+  lineinfile:
+    path: /etc/audit/rules.d/audit.rules
+    line: "-w /var/log/sudo.log -p wa -k sudo_actions"
