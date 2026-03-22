@@ -9,3 +9,8 @@
     name: rsyslog
     state: started
     enabled: yes
+
+- name: Enable remote logging (SIEM simulation)
+  lineinfile:
+    path: /etc/rsyslog.conf
+    line: "*.* @@logserver:514"
