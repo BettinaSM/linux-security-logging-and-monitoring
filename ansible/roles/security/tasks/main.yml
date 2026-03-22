@@ -1,0 +1,17 @@
+---
+- name: Install auditd
+  package:
+    name: auditd
+    state: present
+
+- name: Enable auditd
+  service:
+    name: auditd
+    state: started
+    enabled: yes
+
+- name: Configure audit rules
+  include_tasks: audit_rules.yml
+
+- name: Configure rsyslog
+  include_tasks: rsyslog.yml
