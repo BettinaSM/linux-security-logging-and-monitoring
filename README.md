@@ -35,6 +35,22 @@ It focuses on detecting suspicious activity and ensuring traceability through sy
 
 ---
 
+## 🔍 Security Events Monitored
+
+- User authentication (SSH)
+- Privilege escalation (sudo)
+- Critical file changes (/etc/passwd, /etc/shadow)
+
+---
+
+## 📂 Key Log Files
+
+- /var/log/auth.log
+- /var/log/secure
+- /var/log/syslog
+
+---
+
 ## 🚀 How It Works
 
 The playbook configures auditd and rsyslog to capture and manage security events.
