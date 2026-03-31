@@ -1,6 +1,6 @@
 # 🔐 Linux Security Logging & Monitoring
 
-## 📌 Overview
+## Overview
 
 This project simulates a Security Operations Center (SOC) environment by implementing logging, auditing, and monitoring practices on Linux systems.
 
@@ -8,7 +8,7 @@ It focuses on detecting suspicious activity and ensuring traceability through sy
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Enable system auditing
 - Monitor authentication events
@@ -17,7 +17,7 @@ It focuses on detecting suspicious activity and ensuring traceability through sy
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 - auditd for system auditing
 - rsyslog for log management
@@ -26,7 +26,7 @@ It focuses on detecting suspicious activity and ensuring traceability through sy
 
 ---
 
-## ⚙️ Features
+## Features
 
 - Audit rules for sensitive files
 - SSH login monitoring
@@ -35,7 +35,7 @@ It focuses on detecting suspicious activity and ensuring traceability through sy
 
 ---
 
-## 🔍 Security Events Monitored
+## Security Events Monitored
 
 - User authentication (SSH)
 - Privilege escalation (sudo)
@@ -43,7 +43,7 @@ It focuses on detecting suspicious activity and ensuring traceability through sy
 
 ---
 
-## 📂 Key Log Files
+## Key Log Files
 
 - /var/log/auth.log
 - /var/log/secure
@@ -51,13 +51,13 @@ It focuses on detecting suspicious activity and ensuring traceability through sy
 
 ---
 
-## 🚀 How It Works
+## How It Works
 
 The playbook configures auditd and rsyslog to capture and manage security events.
 
 ---
 
-## 🧠 Skills Demonstrated
+## Skills Demonstrated
 
 - Linux security
 - SOC fundamentals
@@ -67,6 +67,6 @@ The playbook configures auditd and rsyslog to capture and manage security events
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 This project simulates SOC environments and should be adapted before production use.
